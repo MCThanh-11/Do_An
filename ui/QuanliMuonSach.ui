@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1161</width>
+    <height>848</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_UI" columnstretch="0,0,0,0">
+      <item row="9" column="0" rowspan="2">
+       <widget class="QGroupBox" name="groupBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>270</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 51, 102);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(245, 245, 245);</string>
+        </property>
+        <property name="title">
+         <string>Các chức năng mượn sách</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>Category:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="comboBox">
+             <property name="styleSheet">
+              <string notr="true">QComboBox {
+    background-color: white;  /* Nền trắng */
+    border: 2px solid #0078D7;  /* Viền xanh đậm */
+    border-radius: 5px;  /* Bo góc */
+    padding: 5px;  /* Khoảng cách bên trong */
+    font-size: 16px;  /* Cỡ chữ to hơn */
+    color: black;  /* Màu chữ đen */
+}
+
+QComboBox::drop-down {
+    border: none;
+    background-color: white;  /* Nền dropdown */
+    width: 25px;  /* Tăng kích thước khu vực dropdown */
+}
+
+QComboBox::down-arrow {
+    image: url(down-arrow.png);  /* Đổi icon mũi tên nếu cần */
+    width: 16px;  /* Tăng kích thước mũi tên */
+    height: 16px;
+    margin-right: 5px;  /* Khoảng cách với viền phải */
+}
+
+QComboBox QAbstractItemView {
+    background: white;
+    selection-background-color: #0078D7;  /* Màu nền khi chọn */
+    selection-color: white;  /* Chữ trắng khi chọn */
+    border-radius: 5px;
+    font-size: 16px;  /* Cỡ chữ trong danh sách */
+}
+</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>ISBN</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Publication Year</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Author</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Quantity</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Book Name</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="2">
+            <widget class="QLineEdit" name="lineEdit_Infor">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255); border-radius: 5px;border: 1px solid black; padding: 3px</string>
+             </property>
+             <property name="placeholderText">
+              <string>Your finding information...</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="2">
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="0" column="2">
+              <widget class="QPushButton" name="pushButtonLoc">
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #0077b6; 
+    border-radius: 8px; 
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #f0f0f0; /* Màu xám nhạt khi hover */
+    border: 2px solid #005f8a; /* Viền đậm hơn */
+}
+
+QPushButton:pressed {
+    background-color: #e0e0e0; /* Màu nhấn */
+    border: 2px solid #004a6d; 
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Find</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../images/ic_Filter.png</normaloff>../images/ic_Filter.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QPushButton" name="pushButtonTra">
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #0077b6; 
+    border-radius: 8px; 
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #f0f0f0; /* Màu xám nhạt khi hover */
+    border: 2px solid #005f8a; /* Viền đậm hơn */
+}
+
+QPushButton:pressed {
+    background-color: #e0e0e0; /* Màu nhấn */
+    border: 2px solid #004a6d; 
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Give Back</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../images/icon_giveback.png</normaloff>../images/icon_giveback.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QPushButton" name="pushButtonMuon">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #0077b6; 
+    border-radius: 8px; 
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #f0f0f0; /* Màu xám nhạt khi hover */
+    border: 2px solid #005f8a; /* Viền đậm hơn */
+}
+
+QPushButton:pressed {
+    background-color: #e0e0e0; /* Màu nhấn */
+    border: 2px solid #004a6d; 
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Borrow</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="7" column="0">
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="horizontalHeaderCascadingSectionResizes">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="horizontalHeaderMinimumSectionSize">
+         <number>110</number>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderCascadingSectionResizes">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderDefaultSectionSize">
+         <number>80</number>
+        </attribute>
+        <attribute name="verticalHeaderMinimumSectionSize">
+         <number>30</number>
+        </attribute>
+        <attribute name="verticalHeaderStretchLastSection">
+         <bool>false</bool>
+        </attribute>
+        <row>
+         <property name="text">
+          <string>1</string>
+         </property>
+         <property name="foreground">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>40</red>
+            <green>53</green>
+            <blue>146</blue>
+           </color>
+          </brush>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>5</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>6</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>7</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>ISBN</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>Roboto</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="background">
+          <color>
+           <red>40</red>
+           <green>53</green>
+           <blue>146</blue>
+          </color>
+         </property>
+         <property name="foreground">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>40</red>
+            <green>53</green>
+            <blue>146</blue>
+           </color>
+          </brush>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Book Name</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>Roboto</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="foreground">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>40</red>
+            <green>53</green>
+            <blue>146</blue>
+           </color>
+          </brush>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Author</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="foreground">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>40</red>
+            <green>53</green>
+            <blue>146</blue>
+           </color>
+          </brush>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Pub Year</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>Roboto</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="foreground">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>40</red>
+            <green>53</green>
+            <blue>146</blue>
+           </color>
+          </brush>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Quantity</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>Roboto</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="foreground">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>40</red>
+            <green>53</green>
+            <blue>146</blue>
+           </color>
+          </brush>
+         </property>
+        </column>
+        <item row="0" column="0">
+         <property name="text">
+          <string>Test</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>Roboto</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="foreground">
+          <brush brushstyle="NoBrush">
+           <color alpha="255">
+            <red>40</red>
+            <green>53</green>
+            <blue>146</blue>
+           </color>
+          </brush>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_welcomeuser">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(245, 245, 245);
+color: rgb(0, 51, 102);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Xin chào</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="3" rowspan="4">
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(245, 245, 245);
+color: rgb(0, 51, 102);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="title">
+         <string>Các cuốn sách đang mượn:</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QTableWidget" name="tableWidgetsachmuon">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(40,103,129);
+color: rgb(0, 0, 0);</string>
+           </property>
+           <attribute name="horizontalHeaderDefaultSectionSize">
+            <number>110</number>
+           </attribute>
+           <attribute name="horizontalHeaderMinimumSectionSize">
+            <number>60</number>
+           </attribute>
+           <attribute name="horizontalHeaderStretchLastSection">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="verticalHeaderDefaultSectionSize">
+            <number>70</number>
+           </attribute>
+           <row>
+            <property name="text">
+             <string>1</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>2</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>3</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>ISBN</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="background">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Book Name</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Author</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Pub Year</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Quantity</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+           </column>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="1">
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="pushButton_Chatbot">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>70</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #0077b6; 
+    border-radius: 5px; 
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #f0f0f0; /* Màu xám nhạt khi hover */
+    border: 2px solid #005f8a; /* Viền đậm hơn */
+}
+
+QPushButton:pressed {
+    background-color: #e0e0e0; /* Màu nhấn */
+    border: 2px solid #004a6d; 
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../images/ic_chatbot.png</normaloff>../images/ic_chatbot.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>68</width>
+          <height>68</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <property name="autoRepeat">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="pushButton_Signout">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>70</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #0077b6; 
+    border-radius: 5px; 
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #f0f0f0; /* Màu xám nhạt khi hover */
+    border: 2px solid #005f8a; /* Viền đậm hơn */
+}
+
+QPushButton:pressed {
+    background-color: #e0e0e0; /* Màu nhấn */
+    border: 2px solid #004a6d; 
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../images/ic_signout.png</normaloff>../images/ic_signout.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>68</width>
+          <height>68</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1161</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

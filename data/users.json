@@ -1,0 +1,53 @@
+[
+    {
+        "user_id": "001",
+        "name": "Le Tuan Anh",
+        "username": "Tuna",
+        "password": "090206",
+        "role": "User",
+        "receipt_id": [
+            "A01",
+            "A06"
+        ]
+    },
+    {
+        "user_id": "002",
+        "name": "Le Tuan Em",
+        "username": "Tuno",
+        "password": "090207",
+        "role": "User",
+        "receipt_id": [
+            "A02"
+        ]
+    },
+    {
+        "user_id": "003",
+        "name": "Le Tuan Teo",
+        "username": "Tune",
+        "password": "090208",
+        "role": "User",
+        "receipt_id": [
+            "A03"
+        ]
+    },
+    {
+        "user_id": "004",
+        "name": "Le Tuan Khi",
+        "username": "Tunb",
+        "password": "090209",
+        "role": "Admin",
+        "receipt_id": [
+            "A04"
+        ]
+    },
+    {
+        "user_id": "005",
+        "name": "Le Tuan Tu",
+        "username": "Tunq",
+        "password": "090200",
+        "role": "Admin",
+        "receipt_id": [
+            "A05"
+        ]
+    }
+]

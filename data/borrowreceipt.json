@@ -1,0 +1,50 @@
+[
+    {
+        "receipt_id": "A01",
+        "borrower": "001",
+        "title": "Co tich lo lem",
+        "name": "Le Tuan Anh",
+        "book_id": "112",
+        "quantity_borrow": "1"
+    },
+    {
+        "receipt_id": "A02",
+        "borrower": "002",
+        "title": "Co tich cong lem",
+        "name": "Le Tuan Em",
+        "book_id": "113",
+        "quantity_borrow": "2"
+    },
+    {
+        "receipt_id": "A03",
+        "borrower": "003",
+        "title": "Co tich Ho Do",
+        "name": "Le Tuan Teo",
+        "book_id": "114",
+        "quantity_borrow": "3"
+    },
+    {
+        "receipt_id": "A04",
+        "borrower": "004",
+        "title": "Co tich Ho Do",
+        "name": "Le Tuan Khi",
+        "book_id": "114",
+        "quantity_borrow": "4"
+    },
+    {
+        "receipt_id": "A05",
+        "borrower": "005",
+        "title": "Co tich Hu Don",
+        "name": "Le Tuan Tu",
+        "book_id": "115",
+        "quantity_borrow": "4"
+    },
+    {
+        "receipt_id": "A06",
+        "borrower": "001",
+        "title": "Co tich Ho Do",
+        "name": "Le Tuan Anh",
+        "book_id": "112",
+        "quantity_borrow": "1"
+    }
+]

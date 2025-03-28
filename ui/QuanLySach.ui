@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1574</width>
+    <height>993</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ngô Hoàng Khải</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(208, 216, 224);</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 26pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(40,103,129);
+color: rgb(255, 255, 255);
+</string>
+        </property>
+        <property name="text">
+         <string>Quản lý Sách</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QGroupBox" name="groupBoxCo">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(245, 245, 245);
+color: rgb(0, 51, 102);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+            </property>
+            <property name="title">
+             <string>Book List:</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QTableWidget" name="tableWidget">
+               <property name="minimumSize">
+                <size>
+                 <width>800</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(40,103,129);</string>
+               </property>
+               <attribute name="horizontalHeaderDefaultSectionSize">
+                <number>235</number>
+               </attribute>
+               <attribute name="horizontalHeaderMinimumSectionSize">
+                <number>20</number>
+               </attribute>
+               <attribute name="verticalHeaderDefaultSectionSize">
+                <number>60</number>
+               </attribute>
+               <row>
+                <property name="text">
+                 <string>1</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>2</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>3</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>4</string>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>5</string>
+                </property>
+               </row>
+               <column>
+                <property name="text">
+                 <string>ISBN</string>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Book Name</string>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Author</string>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Pub Year</string>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Quantity</string>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>MS Shell Dlg 2</family>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="textAlignment">
+                 <set>AlignCenter</set>
+                </property>
+               </column>
+              </widget>
+             </item>
+             <item>
+              <layout class="QGridLayout" name="gridLayout">
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="lineEditBookName"/>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_2">
+                 <property name="text">
+                  <string>ISBN:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_3">
+                 <property name="text">
+                  <string>Book Name:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="lineEditISBN"/>
+               </item>
+               <item row="4" column="1">
+                <widget class="QLineEdit" name="lineEditQuantity"/>
+               </item>
+               <item row="3" column="1">
+                <widget class="QLineEdit" name="lineEditPubYear"/>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="lineEditAuthor"/>
+               </item>
+               <item row="4" column="0">
+                <widget class="QLabel" name="label_6">
+                 <property name="text">
+                  <string>Quantity:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="label_5">
+                 <property name="text">
+                  <string>Pub Year:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="label_4">
+                 <property name="text">
+                  <string>Author:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="1">
+                <layout class="QGridLayout" name="gridLayout_2">
+                 <item row="0" column="0">
+                  <widget class="QPushButton" name="pushButtonThemSach">
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #0077b6; 
+    border-radius: 8px; 
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #f0f0f0; /* Màu xám nhạt khi hover */
+    border: 2px solid #005f8a; /* Viền đậm hơn */
+}
+
+QPushButton:pressed {
+    background-color: #e0e0e0; /* Màu nhấn */
+    border: 2px solid #004a6d; 
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Add book</string>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>../images/IC_selected.png</normaloff>../images/IC_selected.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QPushButton" name="pushButtonUpdate">
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #0077b6; 
+    border-radius: 8px; 
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #f0f0f0; /* Màu xám nhạt khi hover */
+    border: 2px solid #005f8a; /* Viền đậm hơn */
+}
+
+QPushButton:pressed {
+    background-color: #e0e0e0; /* Màu nhấn */
+    border: 2px solid #004a6d; 
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Update</string>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>../images/IC_selected.png</normaloff>../images/IC_selected.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QPushButton" name="pushButtonXoaSach">
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #0077b6; 
+    border-radius: 8px; 
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #f0f0f0; /* Màu xám nhạt khi hover */
+    border: 2px solid #005f8a; /* Viền đậm hơn */
+}
+
+QPushButton:pressed {
+    background-color: #e0e0e0; /* Màu nhấn */
+    border: 2px solid #004a6d; 
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Delete book</string>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>../images/IC_selected.png</normaloff>../images/IC_selected.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="3">
+                  <widget class="QPushButton" name="pushButton_Signout">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>70</width>
+                     <height>70</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>68</width>
+                     <height>68</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #0077b6; 
+    border-radius: 5px; 
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #f0f0f0; /* Màu xám nhạt khi hover */
+    border: 2px solid #005f8a; /* Viền đậm hơn */
+}
+
+QPushButton:pressed {
+    background-color: #e0e0e0; /* Màu nhấn */
+    border: 2px solid #004a6d; 
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>../images/ic_signout.png</normaloff>../images/ic_signout.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>68</width>
+                     <height>68</height>
+                    </size>
+                   </property>
+                   <property name="checkable">
+                    <bool>false</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1574</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSystem">
+    <property name="title">
+     <string>System</string>
+    </property>
+    <widget class="QMenu" name="menuExportData">
+     <property name="title">
+      <string>ExportData</string>
+     </property>
+     <addaction name="actionExcel_File_Export"/>
+    </widget>
+    <addaction name="separator"/>
+    <addaction name="menuExportData"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionHelp"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuSystem"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../.designer/ProductManagement/Images/ic_exit_icon.png</normaloff>../../.designer/ProductManagement/Images/ic_exit_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </action>
+  <action name="actionCsv_File">
+   <property name="text">
+    <string>Csv File</string>
+   </property>
+  </action>
+  <action name="actionTxt_File">
+   <property name="text">
+    <string>Txt File</string>
+   </property>
+  </action>
+  <action name="actionXML_File">
+   <property name="text">
+    <string>XML File</string>
+   </property>
+  </action>
+  <action name="actionJSON_File">
+   <property name="text">
+    <string>JSON File</string>
+   </property>
+  </action>
+  <action name="actionExcel_File_Import">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../.designer/ProductManagement/Images/ic_excel.png</normaloff>../../.designer/ProductManagement/Images/ic_excel.png</iconset>
+   </property>
+   <property name="text">
+    <string>Excel File</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionPickle_File">
+   <property name="text">
+    <string>Pickle File</string>
+   </property>
+  </action>
+  <action name="actionTxt_FIle">
+   <property name="text">
+    <string>Txt FIle</string>
+   </property>
+  </action>
+  <action name="actionCsv_File_2">
+   <property name="text">
+    <string>Csv File</string>
+   </property>
+  </action>
+  <action name="actionJSON_File_2">
+   <property name="text">
+    <string>JSON File</string>
+   </property>
+  </action>
+  <action name="actionExcel_File_Export">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../.designer/ProductManagement/Images/ic_excel.png</normaloff>../../.designer/ProductManagement/Images/ic_excel.png</iconset>
+   </property>
+   <property name="text">
+    <string>Excel File</string>
+   </property>
+   <property name="shortcut">
+    <string/>
+   </property>
+  </action>
+  <action name="actionPickle_File_2">
+   <property name="text">
+    <string>Pickle File</string>
+   </property>
+  </action>
+  <action name="actionXML_File_2">
+   <property name="text">
+    <string>XML File</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="icon">
+    <iconset>
+     <normaloff>../ProductManagement/Images/IC_help.jpg</normaloff>../ProductManagement/Images/IC_help.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Current Help</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset>
+     <normaloff>../ProductManagement/Images/IC_about.jpg</normaloff>../ProductManagement/Images/IC_about.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

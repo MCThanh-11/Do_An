@@ -1,0 +1,34 @@
+[
+    {
+        "book_id": "112",
+        "title": "Co tich lo lem",
+        "author": "To Hoai",
+        "publication_year": 1996,
+        "quantity": 20,
+        "link": ""
+    },
+    {
+        "book_id": "113",
+        "title": "Co tich cong lem",
+        "author": "To Mai",
+        "publication_year": 1998,
+        "quantity": 19,
+        "link": ""
+    },
+    {
+        "book_id": "114",
+        "title": "Co tich Ho Do",
+        "author": "To Chau",
+        "publication_year": 1999,
+        "quantity": 15,
+        "link": ""
+    },
+    {
+        "book_id": "115",
+        "title": "Co tich Hu Don",
+        "author": "To Kien",
+        "publication_year": 1995,
+        "quantity": 24,
+        "link": ""
+    }
+]
