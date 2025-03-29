@@ -38,7 +38,7 @@ class RegisterNewAccount(Ui_Form):
 
         # Kiểm tra username đã tồn tại hay chưa
         for i in instanceusername:
-            if username == i['username']:
+            if username == i.username:
                 self.labelNotification_newUserName.setText("This username is already taken, please choose another one.")
                 return False  # Thoát ngay nếu username đã tồn tại
 
